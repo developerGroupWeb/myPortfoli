@@ -292,27 +292,31 @@
 		</div>
 	</section>
 
+    <div class="alert alert-info" style="display: none"></div>
 	<section id="contact">
 		<div class="container pt-4 pb-5">
 			<h1 class="text-center wow fadeInDown my-5">Get in touch</h1>
 			<div class="wow fadeInRight" style="border: 2px solid #0099ff; width: 100px; margin: auto; margin-bottom: 60px;"></div>
 			<div class="row">
 				<div class="col-md-6 wow fadeInLeft">
-					 <form action="" method="post" id="get_in_touch">
+					 <form action="" method="post" id="submit">
 					 	<h4 class="text-center" style="color: #0099ff">Have a question or want to work together?</h4>
 					 	<div class="form-group">
 					    <label for="name"></label>
-					    <input type="text" placeholder="your name" class="form-control" id="name">
+					    <input type="text" placeholder="your name" class="form-control" name="name" id="name">
+                            <span class="error-name" style="display: none; color: red; font-style: italic"></span>
 					  </div> 
 					  <div class="form-group">
 					    <label for="email"></label>
-					    <input type="email" placeholder="Email" class="form-control" id="email">
+					    <input type="email" placeholder="Email" class="form-control" name="email" id="email">
+                          <span class="error-email" style="display: none; color: red; font-style: italic"></span>
 					  </div>
 					  <div class="form-group">
 					    <label for="mssg"></label>
-					    <textarea type="text" placeholder="message" class="form-control" id="pwd"></textarea>
+					    <textarea type="text" placeholder="message" class="form-control" name="message" id="message"></textarea>
+                          <span class="error-message" style="display: none; color: red; font-style: italic"></span>
 					  </div>
-					  <button type="submit" name="submit" id="get_in_touch" class="btn col-sm-4">SEND</button>
+					  <button type="submit"  id="get_in_touch" class="btn col-sm-4">SEND</button>
 					</form> 
 				</div>
 				<div class="col-md-6 wow fadeInRight">
